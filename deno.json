@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch --unstable-kv --env-file main.ts",
+    "compile": "deno compile --unstable-kv -A --env-file main.ts",
+    "compile:win": "deno compile --unstable-kv -A --env-file --target x86_64-pc-windows-msvc main.ts"
+  },
+  "imports": {
+    "express": "npm:express@^4.21.1"
+  },
+  "fmt": {
+    "options": {
+      "indentWidth": 4,
+      "lineWidth": 100
+    }
+  }
+}
