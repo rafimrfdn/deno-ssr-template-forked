@@ -34,7 +34,8 @@ app.use((req: Request, _res: express.Response, next: NextFunction) => {
 // Central error handler
 app.use(problemDetailsHandler);
 
-app.listen(8000, () => {
+const port = Deno.env.get("PORT") || "8000";
+app.listen(port, () => {
     console.log("Server is running on http://localhost:8000");
 });
 
