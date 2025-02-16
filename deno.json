@@ -5,7 +5,9 @@
     "compile:win": "deno compile --unstable-kv -A --env-file --target x86_64-pc-windows-msvc main.ts"
   },
   "imports": {
-    "express": "npm:express@^4.21.1"
+    "express": "npm:express@^4.21.1",
+    "preact": "npm:preact@^10.26.0",
+    "preact-render-to-string": "npm:preact-render-to-string@^6.5.13"
   },
   "fmt": {
     "options": {
